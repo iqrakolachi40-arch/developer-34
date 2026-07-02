@@ -1454,6 +1454,34 @@ html[dir="rtl"] .footer-links a:hover {
     display: none; /* Hide standard nav for simplicity on mobile, can fallback */
   }
 
+  /* --- Mobile Header Fixes --- */
+  .logo-text h1 {
+    font-size: 0.95rem;
+  }
+  .logo-text p {
+    display: none; /* Hide subtitle to save space on phones */
+  }
+  .logo-img {
+    height: 40px;
+    margin-right: 6px !important;
+  }
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+  .nav-actions {
+    gap: 8px;
+  }
+  .nav-actions .btn-primary {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+  .btn-lang {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
   /* History Timeline collapses to vertical vertical line on the left */
   .timeline-wrapper::before {
     left: 20px;
