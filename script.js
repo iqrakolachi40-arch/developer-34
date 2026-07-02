@@ -5,6 +5,7 @@ window.translations = {
     nav_programs: "Our Programs",
     nav_impact: "Our Impact",
     nav_history: "Milestones",
+    nav_board: "Board of Trust",
     nav_contact: "Contact",
     btn_donate: "Donate Now",
     btn_volunteer: "Volunteer",
@@ -41,6 +42,14 @@ window.translations = {
     // Timeline
     timeline_title: "Founding & Leadership History",
     timeline_subtitle: "Our 20-Year Journey of Dedication and Service",
+    
+    // Board
+    team_title: "Our Leadership & Members",
+    team_subtitle: "The dedicated team behind our mission to serve humanity.",
+    role_founder: "Founder & Chairperson",
+    role_board: "Board Member",
+    role_member: "Trust Member",
+    member_name_placeholder: "[Member Name]",
     
     // Program Categories
     prog_title: "Our Programs & Community Services",
@@ -120,6 +129,7 @@ window.translations = {
     nav_programs: "ہمارے پروگرامز",
     nav_impact: "ہمارا اثر",
     nav_history: "سنگِ میل",
+    nav_board: "بورڈ آف ٹرسٹ",
     nav_contact: "رابطہ کریں",
     btn_donate: "عطیہ کریں",
     btn_volunteer: "رضاکار بنیں",
@@ -156,6 +166,14 @@ window.translations = {
     // Timeline
     timeline_title: "قیام اور قیادت کی تاریخ",
     timeline_subtitle: "ہماری 20 سالہ بے لوث خدمت کا سفر",
+    
+    // Board
+    team_title: "ہماری قیادت اور ممبران",
+    team_subtitle: "انسانیت کی خدمت کے مشن کے پیچھے ہمارے پرعزم لوگ۔",
+    role_founder: "بانی اور چیئرپرسن",
+    role_board: "بورڈ ممبر",
+    role_member: "ٹرسٹ ممبر",
+    member_name_placeholder: "[ممبر کا نام]",
     
     // Program Categories
     prog_title: "ہمارے فلاحی پروگرامز",

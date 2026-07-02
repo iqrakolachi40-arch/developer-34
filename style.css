@@ -721,6 +721,59 @@ html[dir="rtl"] .hero-content .motto {
 }
 
 /* ==========================================================================
+   Our Team / Members
+   ========================================================================== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.team-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: transform var(--transition-normal);
+}
+body.dark-mode .team-card {
+  background-color: #1E293B;
+}
+.team-img-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  margin: 0 auto 20px auto;
+  border: 4px solid var(--primary);
+  overflow: hidden;
+}
+.team-img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-info h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 5px;
+}
+.team-role {
+  color: var(--primary-dark);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
    History Timeline
    ========================================================================== */
 .timeline-section {
@@ -1395,10 +1448,83 @@ html[dir="rtl"] .footer-links a:hover {
 }
 
 /* ==========================================================================
+   Board of Trust Section
+   ========================================================================== */
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.board-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  transition: var(--transition-slow);
+  text-align: center;
+}
+
+.board-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(13, 148, 136, 0.3);
+}
+
+.board-img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.board-img-placeholder {
+  font-size: 4rem;
+  color: var(--primary);
+  opacity: 0.5;
+}
+
+.board-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.board-card:hover .board-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.board-info {
+  padding: 24px 16px;
+}
+
+.board-info h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-bottom: 4px;
+}
+
+.board-info .board-role {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 1024px) {
-  .programs-grid {
+  .programs-grid, .board-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .stats-grid {
@@ -1525,7 +1651,7 @@ html[dir="rtl"] .footer-links a:hover {
 }
 
 @media (max-width: 480px) {
-  .programs-grid, .stats-grid, .about-feature-grid {
+  .programs-grid, .stats-grid, .about-feature-grid, .board-grid {
     grid-template-columns: 1fr;
   }
   .simulator-card {
