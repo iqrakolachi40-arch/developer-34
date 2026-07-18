@@ -46,7 +46,9 @@ window.translations = {
     // Board
     team_title: "Our Leadership & Members",
     team_subtitle: "The dedicated team behind our mission to serve humanity.",
-    role_founder: "Founder & Chairperson",
+    name_member1: "Haji Zafdar",
+    name_member2: "Ahmed Sultan Laghari",
+    role_founder: "Chairman & Founder",
     role_board: "Board Member",
     role_member: "Trust Member",
     member_name_placeholder: "[Member Name]",
@@ -170,7 +172,9 @@ window.translations = {
     // Board
     team_title: "ہماری قیادت اور ممبران",
     team_subtitle: "انسانیت کی خدمت کے مشن کے پیچھے ہمارے پرعزم لوگ۔",
-    role_founder: "بانی اور چیئرپرسن",
+    name_member1: "حاجی زفدر",
+    name_member2: "احمد سلطان لغاری",
+    role_founder: "چیئرمین اور بانی",
     role_board: "بورڈ ممبر",
     role_member: "ٹرسٹ ممبر",
     member_name_placeholder: "[ممبر کا نام]",

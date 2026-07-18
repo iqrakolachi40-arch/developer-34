@@ -289,7 +289,7 @@ html[dir="rtl"] .text-right {
 }
 
 .logo-img {
-  height: 70px;
+  height: 85px;
   width: auto;
   object-fit: contain;
   transition: transform var(--transition-normal);
@@ -550,24 +550,53 @@ html[dir="rtl"] .hero-content .motto {
   z-index: 1;
 }
 
-.hero-image-card {
+.hero-slider-container {
   position: relative;
-  z-index: 2;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  border: 4px solid white;
-  width: 100%;
-  max-width: 480px;
-  background-color: var(--bg-card);
+  z-index: 2;
 }
 
-.hero-image-card img {
+@media (max-width: 768px) {
+  .hero-slider-container {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.hero-slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: heroCrossfade5 15s infinite;
   transform: scale(1.01);
   transition: transform var(--transition-slow);
 }
+
+.hero-slider-container:hover .hero-slider-img {
+  transform: scale(1.05);
+}
+
+.hero-slider-img:nth-child(1) { animation-delay: 0s; }
+.hero-slider-img:nth-child(2) { animation-delay: 3s; }
+.hero-slider-img:nth-child(3) { animation-delay: 6s; }
+.hero-slider-img:nth-child(4) { animation-delay: 9s; }
+.hero-slider-img:nth-child(5) { animation-delay: 12s; }
+
+@keyframes heroCrossfade5 {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  20% { opacity: 1; }
+  28% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
 
 .hero-image-card:hover img {
   transform: scale(1.05);
@@ -699,6 +728,14 @@ html[dir="rtl"] .hero-content .motto {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.badge-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-premium);
+  border-color: var(--primary);
+  z-index: 2;
 }
 
 .badge-card .badge-icon {
@@ -1588,7 +1625,7 @@ html[dir="rtl"] .footer-links a:hover {
     display: none; /* Hide subtitle to save space on phones */
   }
   .logo-img {
-    height: 40px;
+    height: 55px;
     margin-right: 6px !important;
   }
   .logo-icon {
@@ -1766,3 +1803,5 @@ html[dir="rtl"] .reveal-right {
 .interactive-hover:hover {
   transform: translateY(-5px);
 }
+
+
